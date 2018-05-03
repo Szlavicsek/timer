@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   background-image: url(pattern.png);
+   background-size: 450px;
+}
+
+.container {
+   margin: 150px auto 30px auto;
+   border-radius: 4px;
+   background-color: gray;
+   width: 500px;
+   height: 200px;
+   text-align: center;
+   position: relative;
+}
+
+#clock-name {
+   display: inline-block;
+   position: absolute;
+}
+
+#actualClock {
+   position: absolute;
+   width: 450px;
+   height: 150px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: whitesmoke;
+   border-radius: 10px
+}
+
+#clocknamespan {
+   border-radius: 3px;
+   width: 120px;
+   color: white;
+   font-size: 1.2rem;
+   font-family: 'Amatic SC', cursive;
+   background-color: #FF4136;
+   position: absolute;
+   transform: translate(-50%, -50%);
+}
+
+.counter {
+	position: relative;
+   border-radius: 5px;
+   background-color: lightgrey;
+   width: 380px;
+   height: 100px;
+	margin: 25px auto;
+   border: 3px solid #FF4136;
+}
+
+.entityEl {
+   display: inline-block;
+}
+
+.counter span {
+   display: inline-block;
+   color: black;
+   font-size: 4.6rem;
+   font-family: 'Amatic SC', cursive;
+}
+
+.operators {
+	text-align: center;
+  background-color: rgba(103, 158, 246, 0.5);
+  border-top: 1px solid #FF4136;
+  border-bottom: 1px solid #FF4136;
+}
+
+.inputEl {
+  display: inline-block;
+}
+
+.inputs {
+  padding-top: 15px;
+}
+
+input {
+  padding-top: 3px;
+  padding-bottom: 1px;
+	font-family: sans-serif;
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 0;
+	height: 2rem;
+	width: 80px;
+	font-size: 2rem;
+	border-radius: 3px;
+	border: 2px solid #FF4136;
+	transition: 200ms ease;
+}
+
+input:focus { border: 2px solid rgb(54, 185, 255); }
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.btn {
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin: 20px;
+	width: 100px;
+	height: 30px;
+	border: 0;
+	outline: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+p {
+  color: black;
+  font-weight: 700;
+  font-size: 1.8rem;
+	font-family: 'Amatic SC', cursive;
+  display: inline-block;
+}
+
+.startBtn_inactive {
+	background-color: rgb(82, 208, 96);
+}
+
+.startBtn_active {
+    background-color: orange;
+}
+
+.nullBtn_inactive {
+  background-color: grey;
+  cursor: default;
+}
+
+.nullBtn_active {
+    background-color: #FF4136;
+}

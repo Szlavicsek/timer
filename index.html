@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="clock-box">
+      <div id="clock-name">
+        <span id="clocknamespan">Donc o'Clock</span>
+      </div>
+      <div id="actualClock">
+        <div class="counter">
+          <div class="entityEl">
+            <span class="entity" id="days"></span><span>:</span>
+          </div>
+          <div class="entityEl">
+            <span class="entity" id="hrs"></span><span>:</span>
+          </div>
+          <div class="entityEl">
+            <span class="entity" id="mins"></span><span>:</span>
+          </div>
+          <div class="entityEl">
+            <span class="entity" id="secs"></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="operators">
+    <div class="inputs">
+      <div class="inputEl">
+        <input class="input" type="number" id="setDays" min="0" max="365" maxlength="3" placeholder="00" />
+        <p>Days</p>
+      </div>
+      <div class="inputEl">
+        <input class="input" type="number" id="setHours" min="0" max="23" maxlength="2" placeholder="00" />
+        <p>Hours</p>
+      </div>
+      <div class="inputEl">
+        <input class="input" type="number" id="setMinutes" min="0" max="59" maxlength="2" placeholder="00" />
+        <p>Minutes</p>
+      </div>
+      <div class="inputEl">
+        <input class="input" type="number" id="setSeconds" min="0" max="59" maxlength="2" placeholder="00" />
+        <p>Seconds</p>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="start" class="btn startBtn_inactive pauseInterval">start</button>
+      <button id="null" class="btn pauseInterval nullBtn_inactive">null</button>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
